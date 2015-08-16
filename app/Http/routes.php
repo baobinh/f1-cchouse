@@ -31,6 +31,13 @@ Route::get('/', [
     'uses' => 'HomeController@index'
 ]);
 
+Route::get('ghi-danh', function () { return view('pages.ghidanh'); });
+
+Route::post('ghi-danh', [
+    'as'   => 'ghidanh',
+    'uses' => 'ghidanh@dangky'
+]);
+
 // Test URL
 Route::get('test/{page}', [
     'as'   => 'test',

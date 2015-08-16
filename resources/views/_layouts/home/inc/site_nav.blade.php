@@ -31,6 +31,7 @@
           @foreach ($navItems as $i)
           <li{!! Request::is("tin/$i[name]") || Request::is("tin/$i[name]/*") ? ' class="active"' : '' !!}><a href="{{ route('article.index', "$i[name]") }}">{{ $i['title'] }}</a></li>
           @endforeach
+          <li><a href="{{ route('ghidanh') }}">Ghi danh</a></li>
         </ul>
         @endif
 
