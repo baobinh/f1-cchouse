@@ -23,12 +23,24 @@ id="ghidanh-page"
 
 <div class="container-fluid">
   <form action="{{ route('ghidanh') }}" method="post">
+    @if (session()->has('status'))
+    <p style="color:red">{{ session('status') }}</p>
+    @endif
+
+    @if (count($errors) > 0)
+    <ul style="color:red">
+      @foreach ($errors->all() as $err)
+      <li>{{ $err }}</li>
+      @endforeach
+    </ul>
+    @endif
+
     <h1>Ghi danh</h1>
 
     <h3>Thông tin của Phụ huynh</h3>
     <hr />
     <div class="form-group">
-      <label>Họ và tên:</label>
+      <label>Họ và tên (phụ huynh):</label>
       <input class="form-control" type="text" name="ht" />
     </div>
     <div class="form-group">
@@ -48,8 +60,12 @@ id="ghidanh-page"
     <h3>Thông tin của trẻ</h3>
     <hr />
     <div class="form-group">
-      <label>Họ và tên:</label>
+      <label>Họ và tên (trẻ):</label>
       <input class="form-control" type="text" name="htt" />
+    </div>
+    <div class="form-group">
+      <label>Đăng ký môn học:</label>
+      <input class="form-control" type="text" name="mh" />
     </div>
 
     <input type="submit" value="Đăng ký" />

@@ -7,10 +7,23 @@
 
 namespace NhaThieuNhi\Http\Controllers;
 
+use NhaThieuNhi\Http\Requests\ghidanhfr;
+
 class ghidanh extends Controller
 {
-    public function dangky()
+    public function dangky(ghidanhfr $req)
     {
-        return view('pages.ghidanh');
+        \DB::table('hocvien')->insert([
+            'email'=>$req->input('email'),
+            'hoten'=>$req->input('htt'),
+            'diachi'=>$req->input('dc'),
+            'sdt'=>$req->input('sdt'),
+            'hotenph'=>$req->input('ht'),
+            'mhoc'=>$req->input('mh')
+        ]);
+
+        $req->session()->flash('status', 'Đăng ký thành công.');
+
+        return redirect()->route('ghidanh');
     }
 }
