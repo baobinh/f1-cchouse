@@ -11,13 +11,13 @@ h4, h5, h6 {
 }
 
 .section-topline:before {
-  content: ' ';
+  /* content: ' ';
   display: block;
   margin-top: 30px;
   margin-bottom: 20px;
   width: 100%;
   height: 8px;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAEAQMAAACTPww9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAGUExURf///7+/v6NDdjkAAAAQSURBVAjXY2hgEGBQYHAAAAR4APGA2fwfAAAAAElFTkSuQmCC);
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAEAQMAAACTPww9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAGUExURf///7+/v6NDdjkAAAAQSURBVAjXY2hgEGBQYHAAAAR4APGA2fwfAAAAAElFTkSuQmCC); */
 }
 
 .__bg__overlay {

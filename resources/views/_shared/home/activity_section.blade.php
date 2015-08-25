@@ -29,7 +29,7 @@
         <div id="activity-image-slider" class="ivy-page-wrapper owl-carousel">
           <div class="item">
             {{--<img class="owl-lazy" data-src="media/s_hoatdong/giaoducthieunhi-trochoi-dangian-1.jpg" alt="" >--}}
-            <img src="media/s_hoatdong/giaoducthieunhi-trochoi-dangian-1.jpg" alt="" />
+            <img src="assets/img/photos/banners/slide_banner.jpg" alt="" />
             <div class="act-item__tile__overlay"></div>
             <div class="act-item__tile__details">
               <h3 class="act-item__tile__details__title">Hoạt động ngoại khóa 1</h3>

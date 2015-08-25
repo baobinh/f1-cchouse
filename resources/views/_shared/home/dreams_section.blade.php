@@ -2,11 +2,13 @@
 <section id="dreams-section" class="ivy-section">
   <div class="ivy-page-wrapper">
     <!-- <h2 class="hidden">Dreams</h2> -->
-    <div id="learning-program" style="background-color: #FABF0C; 
+    <div id="learning-program" style="background: url(assets/img/photos/banners/chuongtrinh-lichhoc.jpg); 
                                       color: #fff; text-align: center;
                                       height: 200px;">
-      <img src="assets/img/banner-awning.png" alt="" />
-      <span class="blink" style="color: #A1EF0B; font-size: 30px;">CHƯƠNG TRÌNH VÀ LỊCH HỌC</span>
+      <!-- <img src="assets/img/banner-awning.png" alt="" /> -->
+      <span class="blink" style="color: rgb(113, 255, 2); font-size: 30px; line-height: 200px;">
+        CHƯƠNG TRÌNH VÀ LỊCH HỌC
+      </span>
     </div>
     <div id="dreams-wrapper" class="section-topline">
       <div class="cuztom-row">

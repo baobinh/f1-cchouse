@@ -31,7 +31,7 @@ html.has-background #header {
  =============================================================================*/
 
 #diva {
-  padding: 15px 0;
+  padding-top: 15px;
   background-size: cover;
   border-bottom: .1rem solid rgba(0,0,0,.1);
 }
