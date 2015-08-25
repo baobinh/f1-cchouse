@@ -20,7 +20,7 @@ class AppServiceProvider extends ServiceProvider
 
         view()->share($sharedVars);
 
-        if (env('APP_DEBUG')) {
+        if (env('APP_ENV') == 'local' AND env('APP_DEBUG')) {
             \DB::listen(function ($sql, $bindings, $time) {
                 $op = new ConsoleOutput();
                 $op->writeln('');
