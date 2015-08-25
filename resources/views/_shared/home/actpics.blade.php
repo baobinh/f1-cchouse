@@ -1,23 +1,24 @@
 {{-- Created at 2015/07/26 08:42 htien Exp $ --}}
-
+<style>
+  li {margin-bottom: 5px;}
+</style>
 <div id="actPics" class="box">
   <h4 class="box-title"><span>Ảnh hoạt động</span></h4>
   <div class="UISlider">
     <ul class="slideList no-bullets">
-      @for ($i = 1; $i <= 12; $i++)
-        <?php 
-         if ($i < 10) {
-           $i = "0" . $i;
-         }
-        ?>
-        <li>
-          <div class="text-center">
-            <img src="assets/img/demo/ngoaikhoa/ngoaikhoa-{{ $i }}.jpg" alt=""
-                 style="width: 600px;height: 480px;background-color: #ccc;"/>
-            {{ $i }}
-          </div>
-        </li>
-      @endfor
+      <?php
+        foreach ($arrPic as $val) {
+          $fileName = $val["fileName"];
+      ?>
+          <li>
+            <div class="text-center">
+              <a href="home/album/<?php echo $lastPicCateId; ?>">
+                <img src="<?php echo "uploads/album/" . $fileName; ?>" alt=""
+                      style="width: 600px;height: 480px;background-color: #ccc;"/>
+              </a>
+            </div>
+          </li>
+      <?php } ?>
     </ul>
   </div>
 </div>

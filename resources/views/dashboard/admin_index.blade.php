@@ -49,6 +49,7 @@
             <div class="panel-heading">Bài viết nhanh</div>
             <div class="panel-body">
               <a class="btn btn-success" href="{{ route('admin::@dmin-zone.posts.index') }}">Bài viết <span class="glyphicon glyphicon-menu-right"></span></a>
+              <a class="btn btn-success" href="{{ route('admin::@dmin-zone.pics.index') }}">Bộ sưu tập hình ảnh <span class="glyphicon glyphicon-menu-right"></span></a>
             </div>
           </div>
 

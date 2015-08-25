@@ -80,6 +80,24 @@ Route::group([
 
         // Posts routes
         Route::resource('posts', 'PostController');
+        
+        // Picture routes
+        Route::resource('pics', 'PictureController');
+        
+        Route::post('pics/upload', [
+            'as' => '@dmin-zone.pics.upload',
+            'uses'=>'PictureController@upload'
+        ]);
+        
+        Route::post('pics/update/{pic_cate_id}', [
+            'as' => '@dmin-zone.pics.update',
+            'uses' => 'PictureController@update'
+        ]);
+        
+        Route::get('pics/destroy/{pic_cate_id}', [
+            'as' => '@dmin-zone.pics.destroy',
+            'uses' => 'PictureController@destroy'
+        ]);
     });
 
 });
@@ -127,7 +145,10 @@ Route::get('tin/{ARTICLE?}', [
     'uses' => 'ArticleController@index'
 ]);
 
+Route::get('home/album/{pic_cate_id}', "HomeController@album");
+
 Route::get('{PAGE}', [
     'as'   => 'page',
     'uses' => 'HomeController@page'
 ]);
+

@@ -6,9 +6,11 @@
                                       color: #fff; text-align: center;
                                       height: 200px;">
       <!-- <img src="assets/img/banner-awning.png" alt="" /> -->
-      <span class="blink" style="color: rgb(113, 255, 2); font-size: 30px; line-height: 200px;">
-        CHƯƠNG TRÌNH VÀ LỊCH HỌC
-      </span>
+      <a href="{{ route('page', 'chao-mung') }}">
+        <span class="blink" style="color: rgb(113, 255, 2); font-size: 30px; line-height: 200px;">
+          CHƯƠNG TRÌNH VÀ LỊCH HỌC
+        </span>
+      </a>
     </div>
     <div id="dreams-wrapper" class="section-topline">
       <div class="cuztom-row">
